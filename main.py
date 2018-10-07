@@ -38,14 +38,31 @@
 
 #
 
-pracownik = {'imie': 'Adam',
-            'miasto': 'Bytom',
-            'numer': 50803}
-print(pracownik['imie'])
-for key, value in pracownik.iteritems():
-    print("{0}:{1}".format(key, value))
+#pracownik = {'imie': 'Adam',
+#            'miasto': 'Bytom',
+#            'numer': 50803}
+#print(pracownik['imie'])
+#for key, value in pracownik.iteritems():
+#    print("{0}:{1}".format(key, value))
 
 #identyczne zachwoanie jak powyszy przyklad
 
-for key in pracownik:
-    print("{0}:{1}".format(key, pracownik[key]))
+#for key in pracownik:
+#    print("{0}:{1}".format(key, pracownik[key]))
+
+
+#nastepne zadanie
+#def - funkcja
+
+def print_dict(d):
+    for key, value in d.iteritems():
+        print("{0}:{1}".format(key, value))
+
+# dwie podogi __ sa to zmienne wewnetrzne
+if __name__== "__main__":
+    pracownik = {'imie': 'Adam',
+            'miasto': 'Bytom',
+            'numer': 50803}
+
+    print_dict(pracownik)
+    print_dict(pracownik)
