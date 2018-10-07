@@ -26,11 +26,26 @@
 #    print(k)
 
 #aby wypisac obok siebie wartosci
-szkola = ['podstawowa', 'srednia']
-klasa = [1, 3]
+#szkola = ['podstawowa', 'srednia']
+#klasa = [1, 3]
 
-print(" dlugosc: {0}".format(len(szkola)))
+#print(" dlugosc: {0}".format(len(szkola)))
 
-for idx in range(len(szkola) ) :
-    print( " idx: " + str(idx) + ": " + szkola[idx])
-    print(szkola[idx] + " ilosc klas " + str(klasa[idx]))
+#liczy nam jaka tablica jest duga range(len())
+#for idx in range(len(szkola) ) :
+#    print( " idx: " + str(idx) + ": " + szkola[idx])
+#    print(szkola[idx] + " ilosc klas " + str(klasa[idx]))
+
+#
+
+pracownik = {'imie': 'Adam',
+            'miasto': 'Bytom',
+            'numer': 50803}
+print(pracownik['imie'])
+for key, value in pracownik.iteritems():
+    print("{0}:{1}".format(key, value))
+
+#identyczne zachwoanie jak powyszy przyklad
+
+for key in pracownik:
+    print("{0}:{1}".format(key, pracownik[key]))
